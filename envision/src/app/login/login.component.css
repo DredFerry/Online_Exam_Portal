@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap');
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    background: url(../../assets/loginPg/background_login.png) center center no-repeat ;
+    background-size: 30%;
+}
+.outerBox{
+    height: 50vh;
+    width: 20vw;
+    /* background-color: aqua; */
+    box-shadow: -5px 5px 10px 0 black;
+    
+} 
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid grey;
+    height: 8vh;
+    font-size: 1.2rem;
+    outline: none;
+    /* font-style: italic; */
+    font-weight: bold;
+    width: 50%;
+    align-self: center;
+    padding:0 20px ;
+    background-color: #f0f8ff00;
+    text-align: center;
+    /* color: white; */
+    font-family: 'League Spartan', sans-serif;
+
+}
+button{
+    width: 40%;
+    height: 15%;
+    margin: 0 auto;
+    border: 2px solid grey;
+    /* background-color: rgba(255, 255, 255, 0); */
+    background-color: #8abfb1;
+    color: #848048;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    /* color: white; */
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.452);
+}

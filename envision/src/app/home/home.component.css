@@ -1,0 +1,168 @@
+
+.container{
+    overflow-x: hidden;
+
+}
+.heading{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background-color: #faebd74f;
+}
+.mainimage img{
+    /* width: 30vh; */
+    height: 70vh;
+}
+.headingtop{
+    font-size: 4rem;
+}
+.headingbottom{
+    font-size: 2.5rem;
+}
+/* .button{
+    margin-top: 20vh;
+} */
+.greenButton{
+    margin:10px 10px 10px 0;
+    border: none;
+    width: 10vw;
+    height: 6vh;
+    background-color: rgb(59, 170, 170);
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    color: white;
+    font-size: 1rem;
+}
+
+.greenButton:hover{
+     background-color: rgb(46, 139, 139);
+}
+
+#loginButtons{
+    visibility: visible;
+}
+
+.logOut{
+    margin:10px 10px 10px 0;
+    border: none;
+    width: 10vw;
+    height: 6vh;
+    background-color: rgba(218, 56, 28, 0.76);
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    color: white;
+    font-size: 1rem;
+}
+.logOut:hover{
+    background-color: rgb(218, 56, 28);
+    box-shadow: 0px 0px 7px 2px red;
+}
+.blueButton{
+    margin:10px 10px 10px 0;
+    border: none;
+    width: 10vw;
+    height: 6vh;
+    background-color: rgba(23, 85, 219, 0.76);
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    color: white;
+    font-size: 1rem;
+}
+.blueButton:hover{
+    background-color: rgb(28, 79, 218);
+    box-shadow: 0px 0px 7px 2px blue;
+}
+.examButton{
+    position: relative;
+    left: 0;
+}
+#PortalButton{position: relative;}
+#StudentExam{
+    position: absolute;
+    visibility: hidden;
+}
+#TeacherExam{
+    visibility: hidden;
+    position: absolute;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+
+    transform: translateX(400%);
+    transition: transform 0.5s ease;
+    /* background-color: aquamarine; */
+}
+.even{
+    background-color: aliceblue;
+}
+.para{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+.big{
+    font-size: 2rem;
+    margin: 10px 4vw;
+    font-weight: bolder;
+}
+.small{
+    font-size: 1.2rem;
+    margin: 10px 4vw;
+    font-weight: lighter;
+}
+.image{
+    margin: 0 3vw;
+    height: 90%;
+    width: 40%;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------------------------- */
+@media screen and (max-width: 900px){
+    .heading{
+        flex-direction: column;
+    }
+    .mainimage img{
+        height: 60vw;
+    }
+    .headingtop{
+        font-size: 2rem;
+    }
+    .headingbottom{
+        font-size: 1.5rem;
+    }
+    .buttonRes{
+        width: 25vw;
+    }
+    .box{
+        display: flex;
+        height:35vh;
+    }
+    .big{
+        font-size: 1.2rem;
+    }
+    .small{
+        font-size: .8rem;
+    }
+}
+
+
+/* ---------------------------------------------------- */
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.box.show{
+    transform: translateX(0);
+}

@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="box">
+<form [formGroup]="getPaperCodeForm">
+    <div class="form-group">
+        <label>Paper Code:</label>
+        <input id="paperCode" formControlName="paperCode" type="text">
+    </div>
+</form>
+<div class="buttons">
+    <button class="back" (click)="OnBack()">Back</button>
+    <button class="submit" (click)="OnSubmit()">Next</button>
+</div>
+</div>
+</div>

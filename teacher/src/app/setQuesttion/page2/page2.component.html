@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="heading">Upload questions here :</div>
+    <ul>
+        <form [formGroup]="quesPage2Form" (submit)="onSubmit()">
+        <li class="ques" *ngFor="let item of createRange(QuesNum); let currentIndex=index">
+        <div class="form-group" >
+            <label>{{currentIndex+1}}: Question:</label>
+            <input id="ques" formControlName="Question{{currentIndex+1}}" type="text">
+        </div>
+        <div class="form-group">
+            <label>Option A:</label>
+            <input formControlName="optionA{{currentIndex+1}}" type="text">
+        </div>
+        <div class="form-group">
+            <label>Option B:</label>
+            <input formControlName="optionB{{currentIndex+1}}" type="text">
+        </div>
+        <div class="form-group">
+            <label>Option C:</label>
+            <input formControlName="optionC{{currentIndex+1}}" type="text">
+        </div>
+        <div class="form-group">
+            <label>Option D:</label>
+            <input formControlName="optionD{{currentIndex+1}}" type="text">
+        </div>
+        <div class="form-group">
+            <label>Answer:</label>
+            <input formControlName="Answer{{currentIndex+1}}" type="text">
+        </div>
+    </li>
+    <button class="submit" >Next</button>
+</form>
+<button class="back" (click)="backPage()">Back</button>
+</ul>
+</div> 

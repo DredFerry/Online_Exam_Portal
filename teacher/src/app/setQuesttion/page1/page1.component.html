@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="heading">Upload Question Details</div>
+    <div class="center">
+    <form [formGroup]="quesPage1Form" (submit)="OnSubmit()">
+        <div class="form-group">
+            <label>Subject Name:</label>
+            <input id="subName" formControlName="SubName" type="text">
+        </div>
+        <div class="form-group">
+            <label>Number of Questions:</label>
+            <input formControlName="QuesNum" type="number">
+        </div>
+        <div class="form-group">
+            <label>Paper Code:</label>
+            <input formControlName="PaperCode" type="text">
+        </div>
+        <!-- <div class="form-group">
+            <label>Time:</label>
+            <input formControlName="Time" type="time">
+        </div> -->
+        <button class="submit">Next</button>
+    </form>
+    </div>
+    
+</div>

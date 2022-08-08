@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="outerBox">
+    <form action="" [formGroup]="loginForm" (ngSubmit)="OnSubmit($event)">
+        <input placeholder="Enter your UID" type="text"   formControlName="uid" id="">
+        <button [disabled]='!loginForm.valid'>LOGIN</button>
+    </form>
+    </div>
+</div> 

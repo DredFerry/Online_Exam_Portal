@@ -1,0 +1,111 @@
+.container{
+    height: 100vh;
+}
+.pageTop
+{
+    height: 29vh;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:context-menu;
+    user-select: none;
+}
+.pageMiddle{
+    user-select: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+.middleLeft{
+    cursor:context-menu;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.middleCentre{
+    height: 100%;
+}
+.middleRight{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.icons{
+    display:flex ;
+    justify-content: space-around;
+    height: 35%;
+}
+.buttons{
+    display:flex ;
+    justify-content: space-around;
+    height: 15%;
+
+}
+button{
+    cursor: pointer;
+}
+.middleRight .buttons button{
+    height: 100%;
+    width: 35%;
+    border: 0;
+    background-color: rgb(139, 191, 217);
+    transition: all 0.2s ease-in-out;
+}
+.pageBottom{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.pageBottom a{
+
+    height: 25%;
+    width: 10%;
+}
+.pageBottom a button{
+    border: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(139, 191, 217);
+    transition: all .2s ease-in-out;
+}
+.middleRight .icons img{
+    height: 12vh;
+}
+.middleRight .buttons button:hover{
+    background-color: rgb(35, 146, 202);
+    box-shadow: 0px 0px 7px 2px rgb(14, 112, 161);
+    letter-spacing: 1px;
+}
+.pageBottom a button:hover{
+    background-color: rgb(35, 146, 202);
+    box-shadow: 0px 0px 7px 2px rgb(14, 112, 161);
+    letter-spacing: 1px;
+
+}
+@media screen and (max-width: 900px){
+    .middleLeft{
+        font-size: .8rem;
+    }
+}
+#QR_window{
+    display:none;
+    height: inherit;
+    
+}
+#outputInvalid{
+    color: red;   
+    display: none;
+}
+#outputValid{
+    color: green;   
+    display: none;
+}

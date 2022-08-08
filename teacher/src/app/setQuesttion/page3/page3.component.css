@@ -1,0 +1,59 @@
+.container{
+    background: url(../../../assets/background/QuesBg.png) center center;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    color: white;
+}
+.heading{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.Qbox{
+    display: flex;
+}
+.Qbox .data{
+    margin-left: 1vw;
+}
+ul{
+    list-style: none;
+    font-size: 1.3vw;
+    width: 40vw;
+
+}
+li{
+    margin: 6vh 1vw;
+    box-shadow:5px 5px 10px 4px #397b86; 
+    padding-left: 2vw;
+}
+li div{
+    margin: 3vh 0;
+}
+.buttons{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+.submit{
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+.back{
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+button{
+    border-radius: 4px;
+border: none;
+background-color: #dfba27;
+color: #141d24;
+margin-bottom: 5vh;
+}

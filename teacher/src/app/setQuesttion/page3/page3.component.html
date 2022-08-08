@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="heading">Review Question Paper</div>
+    <ul>
+        <li class="ques" *ngFor="let item of createRange(QuesNum); let currentIndex=index">
+        <div class="Qbox" >
+            <div>{{currentIndex+1}}: Question:</div>
+            <div class="data">{{Qset[1][(currentIndex+1)]['question']}}</div>
+        </div>
+        <div class="Qbox">
+            <div>optionA:</div>
+            <div class="data">{{Qset[1][(currentIndex+1)]['optionA']}}</div>
+        </div>
+        <div class="Qbox">
+            <div>optionB:</div>
+            <div class="data">{{Qset[1][(currentIndex+1)]['optionB']}}</div>
+        </div>
+        <div class="Qbox">
+            <div>optionC:</div>
+            <div class="data">{{Qset[1][(currentIndex+1)]['optionC']}}</div>
+        </div>
+        <div class="Qbox">
+            <div>optionD:</div>
+            <div class="data">{{Qset[1][(currentIndex+1)]['optionD']}}</div>
+        </div>
+        <div class="Qbox">
+            <div>Answer:</div>
+            <div class="data">{{Qset[1][(currentIndex+1)]['answer']}}</div>
+        </div>
+    </li>
+    <div class="buttons"><button class="back" (click)="backPage()">Back</button>
+    <button class="submit" (click)="upload()" >Upload</button></div>
+</ul>
+</div>

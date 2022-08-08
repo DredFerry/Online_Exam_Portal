@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap');
+.container{
+    height: 100vh;
+    margin: 10px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background: url('src/assets/profile/student profile.png') ; */
+}
+.container .heading{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 5vh 0;
+    font-family: 'League Spartan', sans-serif;
+}
+.middlePart{
+    display: flex;
+    justify-content:space-evenly ;
+    width: 100%;
+    height: 80%;
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+}
+.leftBox {
+    background-color: #a8a8a8;
+    width: 32%;
+    font-size: 1.3rem;
+    height: 100%;
+    margin: 5px 0;
+}
+.midBox {
+    background-color: #C4BCBC;
+    width: 32%;
+    font-size: 1.3rem;
+    height: 100%;
+    margin: 5px 0;
+}
+.rightBox {
+    width: 32%;
+    margin: 5px 0;
+    height: 100%;
+}
+.leftHeading{
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.midHeading{
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 5px 4px;
+}
+.details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.collegeDetails{
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+
+}
+.space{
+    width: 100%;
+    margin: 5vh 2vw;
+    display: flex;
+}
+.space .left{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.space .right{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.button{
+    padding: 7px 28px;
+    border-radius: 5px;
+    border: none;
+    transition: all .2s ease-in-out;
+    background-color:rgb(133, 133, 133);
+
+
+}
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    letter-spacing: 1px;
+
+}
+.rightBox .box{
+    background: url('../../assets/profile/background.png') center center no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-size: cover;
+    align-items: center;
+}
+.rightBox .box .img{
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
+.rightBox .box .qrCode{
+    height: 150px;
+    width: 100%;
+    margin-top: 30px;
+    object-fit: contain;
+}
+

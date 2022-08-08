@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="nav">
+      <div class="logo">
+          <img src="../assets/LOGO.jpg" alt="">
+      </div>
+      <div class="item">
+        <a routerLink="/"><div>Home</div></a>
+        <a routerLink="/aboutUs"><div>About us</div></a>
+      </div>
+      <button id="navButton" (click)="toggleNav()"> &#9776;</button>
+      <div class="item2" id="item2">
+        <div class="innerBox" id="innerBox">
+          <a routerLink="/"><div>Home</div></a>
+          <a routerLink="/aboutUs"><div>About us</div></a>
+          <!-- <button class="close" (click)="closeItem2()">CLOSE</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="body"><router-outlet></router-outlet></div>
+</div>
+    <div class="footer">
+        <div class="categories">
+          <div class="group">
+            <div class="sitePolicy">
+              <div class="name">Site Policy</div>
+              <div class="list">
+                <ul>
+                  <li>Disclaimer</li>
+                  <li>Privacy Policies</li>
+                  <li>About Incognitoes</li>
+                  <li>Contact Incognitoes</li>
+                </ul>
+              </div>
+            </div>
+            <div class="techSupport">
+              <div class="name">Tech Support</div>
+              <div class="list">
+                <ul>
+                  <li>Developers</li>
+                  <li>Statistics</li>
+                  <li>Cookie Statement</li>
+                  <li>Mobile View</li>
+                </ul>
+              </div>
+            </div>
+            <div class="licence">
+              <div class="name">Licence Agreement</div>
+              <div class="list">
+                <ul>
+                  <li>Foundations</li>
+                  <li>Licence 3.0</li>
+                  <li>Support Us</li>
+                  <li>Copyright</li>
+                </ul>
+              </div>
+            </div>
+            <div class="more">
+              <div class="name">More</div>
+              <div class="list">
+                <ul>
+                  <li>Product</li>
+                  <li>Professional Emails</li>
+                  <li>Terms & Conditions</li>
+                  <li>Reviews</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="contact">
+          <div class="heading">Contact Us</div>
+          <div class="apps">
+            <div class="call appSpace">
+              <div class="icon"></div>
+              <div class="num reduSizeRes">+91 987654321</div>
+            </div>
+            <div class="mail appSpace">
+              <div class="icon"></div>
+              <div class="mailId reduSizeRes">alluArjun@gmail.com</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    

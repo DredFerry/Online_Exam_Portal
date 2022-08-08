@@ -1,0 +1,64 @@
+body{
+    /* background-image: url(../../assets/backgroundImg.png); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    background: linear-gradient(#f2e3c7,white);
+
+}
+h1{
+    text-align: center;
+}
+.container1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    margin: 10px 5px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    width: 25vw;
+    height: 65vh;
+    box-sizing: border-box;
+    background-color: #717d8c7d;
+    /* border: 2px solid black; */
+    color: black;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.post{
+    font-size: 1rem;
+    text-align: center;
+}
+.dp{
+    height: 65%;
+    object-fit: contain;
+    width: 100%;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.about{
+    margin-top: 10px;
+}
+/* ---------------------- */
+fa-icon{
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    transition: all .2s ease-in-out;
+}
+fa-icon:hover{
+    color: white;
+}

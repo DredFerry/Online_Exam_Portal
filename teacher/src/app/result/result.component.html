@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="heading">Result</div>
+    <br><br>
+    <table>
+    <tr>
+        <th>Student Name</th>
+        <th>Student UID</th>
+        <th>Subject Name</th>
+        <th>Total Marks</th>
+        <th>Marks obtained</th>
+        <th>Percentage</th>
+    </tr>
+<tr *ngFor="let document of Qset;let i=index ">
+    <!-- <div class="subject">Subject:{{Qset[i+1].Subject}}</div> -->
+    <td>{{Qset[i+1].Student_Name}}</td>
+    <td>{{Qset[i+1].Stud_uid}}</td>
+    <td>{{Qset[i+1].Subject}}</td>
+    <td>{{Qset[i+1].Full_Marks}}</td>
+    <td>{{Qset[i+1].Marks_Obtained}}</td>
+    <td>{{Qset[i+1].Percentage}}</td>
+</tr>
+</table>
+</div>

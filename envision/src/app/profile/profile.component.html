@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="heading">
+        Student Profile
+    </div>
+    <div class="middlePart">
+        <div class="leftBox">
+            <div class="details">
+                <div class="leftHeading">
+                    Details
+                </div>
+                <div class="content">
+                    <div class="name space">
+                        <div class="left">
+                            Name:
+                        </div>
+                        <div class="right">
+                            {{username}}
+                        </div>
+                    </div>
+                    <div class="uid space">
+                        <div class="left">
+                            UID:
+                        </div>
+                        <div class="right">
+                            {{uid}}
+                        </div>
+                    </div>
+                    <div class="email space">
+                        <div class="left">
+                            Email ID:
+                        </div>
+                        <div class="right">
+                            {{email}}
+                        </div>
+                    </div>
+                    <div class="contact space">
+                        <div class="left">
+                            Contact:
+                        </div>
+                        <div class="right">
+                            {{phoneNumber}}
+                        </div>
+                    </div>
+                    <div class="address space">
+                        <div class="left">
+                            Address:
+                        </div>
+                        <div class="right">
+                            {{address}}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="midBox">
+            <div class="collegeDetails">
+                <div class="midHeading">
+                    College Details
+                </div>
+                <div class="content">
+                    <div class="college space">
+                        <div class="left">
+                            College Name:
+                        </div>
+                        <div class="right">
+                            {{college}}
+                        </div>
+                    </div>
+                    <div class="class space">
+                        <div class="left">
+                            Academic Year:
+                        </div>
+                        <div class="right">
+                            {{academicYear}}
+                        </div>
+                    </div>
+                    <div class="univ space">
+                        <div class="left">
+                            University:
+                        </div>
+                        <div class="right">
+                            {{university}}
+                        </div>
+                    </div>
+                    <div class="stream space">
+                        <div class="left">
+                            Stream:
+                        </div>
+                        <div class="right">
+                            {{stream}}
+                        </div>
+                    </div>
+                    <div class="result space">
+                        <div class="left">
+                            View Result:
+                        </div>
+                        <div class="right">
+                            <a routerLink="/result">
+                            <button class="button">
+                                Click Here
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightBox">
+            <div class="box">
+                <img src="../../assets/profile/profile.png" alt="Image not Supported" srcset="" class="img">
+                <qr-code value={{studentCode}}  errorCorrectionLevel="M"></qr-code>
+                <!-- <img src="../../assets/profile/QR.png" alt="Image not Supported" srcset="" class="qrCode"> -->
+            </div>
+        </div>
+    </div>
+</div>

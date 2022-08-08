@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="pageTop">
+        Exam Portal
+    </div>
+    <div class="pageMiddle">
+        <div class="middleLeft">
+            This is a remote invigilated exam. You need to take this exam using any browser on a desktop/laptop with a webcam. Each question carries 1 mark. The number of questions will depend on the subject and the teacher setting the question paper. Questions can't be reverted.
+        </div>
+       <div class="middleCentre"><ngx-scanner-qrcode id="QR_window" #action="scanner" (data)="validityCheck($event)"></ngx-scanner-qrcode>
+            <span id="outputInvalid">Invalid QR Code</span>
+            <span id="outputValid">Verified</span>
+        </div>
+        <div class="middleRight">
+            <div class="icons">
+                <img src="../../assets/QR_CodeScan.png" alt="">
+                <!-- <img src="../../assets/faceRecog.jpg" alt=""> -->
+            </div>
+            
+            <div class="buttons">
+                <button class="QR" id="QR" (click)="QRFUNC()" (click)=" action.toggleCamera()">
+                    Scan QR
+                </button>
+                <!-- <button class="face">
+                    Scan Face
+                </button> -->
+            </div>
+            
+        </div>
+    </div>
+    <div class="pageBottom">
+       <a href="http://localhost:8080">
+        <button class="start" id="startButton" disabled>
+            Start Exam
+        </button></a>
+    </div>
+
+
+</div>

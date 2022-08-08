@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap%27');
+.container{
+    background-color: grey;
+    background: url('src/assets/profile/student profile.png');
+}
+.heading{
+    width: 100%;
+    /* background-color: red; */
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 3vw;
+    font-family: 'Abril Fatface',cursive;
+}
+.middlePart{
+    /* background-color: green; */
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vw;
+}
+table{
+    /* background-color: yellow; */
+    width: 100%;
+    border: 2px solid black;
+}
+td{
+    text-align: center;
+    /* height: 3vh; */
+    padding-top: 3vh;
+}
+th{
+    border: 2px solid black;
+    height: 10vh;
+}
+.name,.studentId{
+    border: 3px solid black;
+}
